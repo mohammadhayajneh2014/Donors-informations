@@ -79,9 +79,9 @@ function handelspmit(event) {
     generateAge();
     let newDonar=new donar(donName,donAge,donAmount)
     saveToLocalStorage();
-    // calcTotal();
+   
     clearTable();
-    // clearTotal();
+    
 
     newDonar.render();
     
@@ -94,7 +94,4 @@ function clearTable() {
                  
     }
   
-}
-function clearTotal() {
-    h2.textContent='  ';   
 }
