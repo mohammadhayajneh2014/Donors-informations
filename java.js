@@ -18,9 +18,9 @@ donAge=age;
 let total=0;
 function calcTotal(){
    
-  
+  total=0
 for (let i = 0; i < donar.allDonation.length; i++) {
-    total=0;
+    
  total+= parseInt(donar.allDonation[i].amount);    
 }
 return total;
@@ -40,11 +40,12 @@ td2.textContent=donar.allDonation[i].age;
 let td3=document.createElement('td')
 tr1.appendChild(td3);
 td3.textContent=donar.allDonation[i].amount;
-let h2=document.createElement('h2');
+
+    }
+    let h2=document.createElement('h2');
 table.appendChild(h2);
 calcTotal();
 h2.textContent='Total = '+calcTotal(); 
-    }
 }
 
 function saveToLocalStorage(){
@@ -80,6 +81,7 @@ function handelspmit(event) {
     saveToLocalStorage();
     // calcTotal();
     clearTable();
+    // clearTotal();
 
     newDonar.render();
     
@@ -91,5 +93,8 @@ function clearTable() {
        table.removeChild(table.lastChild);
                  
     }
-   // h2.textContent='';
+  
+}
+function clearTotal() {
+    h2.textContent='  ';   
 }
