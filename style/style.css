@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+    background-image:url(/photo/donate-background.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(96, 96, 96,.8);
+    text-align: center;
+    font-size: x-large;
+}
+main{
+    width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 50px;
+
+}
+#formSec,#tableSec{
+    background-color:rgba(96, 96, 96,.8) ;
+    padding: 30px;
+}
+
+footer{
+    background-color: rgba(96, 96, 96,.8) ;
+
+display: block;
+position: absolute;
+width: 100%;
+height: 100px;
+bottom: 0;
+}
+footer p {
+    font-size: x-large;
+    text-align: center;
+    padding-top: 50px;
+}
